@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(241, 240, 240);
+}
+footer
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    flex-wrap: wrap;
+    background-color: #111;
+}
+footer .content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .content .sect
+{
+    margin-right: 30px;
+}
+footer .content .aboutus
+{
+    width: 40%;
+}
+footer .content h2
+{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .content h2::before
+{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(255, 0, 64);
+}
+footer .content .aboutus p
+{
+    color: #999;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+footer .content .aboutus ul
+{
+    display: flex;
+}
+footer .content .aboutus ul li
+{
+    list-style: none;
+    margin-right: 20px;
+}
+footer .content .aboutus ul li a
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+footer .content .aboutus ul li a:hover
+{
+    background-color: #f00;
+}
+footer .content .aboutus ul li a .fa
+{
+    color: #fff;
+    font-size: 20px;
+}
+footer .content .quicklinks
+{
+    position: relative;
+    width: 25%;
+    padding: 0px 20px;
+}
+footer .content .quicklinks ul li
+{
+    list-style: none;
+}
+footer .content .quicklinks ul li a 
+{
+    color: #999;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer .content .quicklinks ul li a:hover
+{
+    color: #f00;
+}
+footer .content .contactus
+{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+footer .content .contactus ul
+{
+    position: relative;
+}
+footer .content .contactus ul li
+{
+    display: flex;
+    margin-bottom: 20px;
+    list-style: none;
+}
+footer .content .contactus ul li span
+{
+    color: #999;
+}
+footer .content .contactus ul li span:nth-child(1)
+{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+footer .content .contactus ul li a
+{
+    color: #999;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+footer .content .contactus ul li a:hover
+{
+    color: #fff;
+}
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #181818;
+    padding: 5px 10px;
+}
+.copyright p
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #999;
+}
+.copyright p a
+{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+.copyright p a:hover
+{
+    color: rgb(255, 0, 76);
+}
+@media (max-width: 1000px)
+{
+    footer
+    {
+        padding: 40px;
+    }
+    footer .content
+    {
+        flex-direction: column;
+    }
+    footer .content .sect 
+    {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    footer .content .aboutus 
+    {
+        width: 100%;
+    }
+    footer .content .quicklinks 
+    {
+        width: 100%;
+        padding: 0;
+    }
+    footer .content .contactus 
+    {
+        width: 100%;
+    }
+    .copyright
+    {
+        padding: 0;
+    }
+    .copyright p
+    {
+        font-size: 14px;
+    }
+    .copyright p a
+    {
+        font-size: 12px;
+    }
+}
